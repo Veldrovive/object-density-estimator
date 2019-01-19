@@ -1,0 +1,9 @@
+nohup.out
+data/
+large_column/
+output/
+small_column/
+scale_aware_crowd.ipynb
+filter_test.ipynb
+__pycache__/
+.ipynb_checkpoints/
