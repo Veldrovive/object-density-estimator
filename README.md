@@ -3,6 +3,20 @@ This is a proof of concept project meant to test the viability of a multi-column
 
 Theoretically, concatenating both with a convolutional filter should take scale into account and provide a more accurate result that either one individually.
 
+Files:
+
+| File Name     | Explanation |
+| ------------- | ----------- |
+| img_preprocessing.py | Converts image and labels into the training data with ground truth heatmaps |
+| save_data.ipynb | Takes images and applies preprocessing to them before saving them off |
+| loss.py | Contains custom loss function |
+| large_column_architecture.py | Defines the cnn model architecture of the large column |
+| large_column_trainer.ipynb | Loads the large column architecture and trains a ranodmized network |
+| small_column_architecture.py | Defineds the cnn model architecture of the small column |
+| small_column_trainer.ipynb | Loads the small column architecture and trains a randomized network |
+| multi-column-trainer.ipynb | Loads small and large column models and combines them into one model to be trained |
+| tester.ipynb | Evaluates the quality of a trained model |
+
 ### Small Column:
 ![Small Column Diagram](https://i.imgur.com/haRX9yX.png)
 
